@@ -1,5 +1,5 @@
-# Manchester-Metro-Route-Planner
-# Manchester Metro Route Planner 🟣🚇
+
+# Manchester Metro Route Planner 🚇
 
 A Java application that calculates routes on a Manchester-style metro/tram network.
 
