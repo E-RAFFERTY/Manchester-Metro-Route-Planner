@@ -1,80 +1,21 @@
+# SCC-Summer_Project 
+The project i did was the manchester metro
 
-# Manchester Metro Route Planner 🚇
 
-A Java application that calculates routes on a Manchester-style metro/tram network.
+## To complie
+- the code is Written in java
+- to compile the code run `javac *.java && java Driver`
+- this will bring up the GUI which i mave made easy to understand
 
-The app supports two different routing strategies:
-1. Shortest path (fewest stops or lowest total weight) using Dijkstra’s Algorithm
-2. Least changes (minimise line/interchange changes) using BFS / layered search
+## Additional features 
 
-This project demonstrates object-oriented programming (OOP) design and graph algorithms.
+there are a few additional features that i have added which wasn't specified by the document
 
----
+- i have added a price calculator i have made a aditional cvs file which has the station and their zone in the metro and wrote an algarithum to work out which zones you go through and work out the price based off the online sophisticated
 
-## ✨ Features
+- i have gone quite far with the GUI inclusing drop down boxes photos, icons, as well as adding lables 
 
-- ✅ OOP design – stations, connections, and lines are modelled as objects
-- ✅ Two route modes:
-  - Shortest Path → Dijkstra’s algorithm
-  - Least Changes → BFS / modified search
-- ✅ Input validation for unknown stations
-- ✅ Text-based route output (step-by-step)
-- ✅ Easily extendable to new stations or lines
-- ✅ Useful for teaching or demonstration purposes
+- have added message box to apear if you try to add a delay on a connection that does not exist
 
----
-
-## 🧠 How it works
-
-- The metro network is represented as a graph:
-  - Nodes = stations
-  - Edges = connections (with optional weights such as time)
-- Dijkstra’s Algorithm finds the minimum-cost path between two stations
-- BFS finds a path that minimises transfers (even if slightly longer)
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Java 17 (or Java 11+)
-- A terminal or IDE such as IntelliJ or VS Code
-
-### Clone the repository
-git clone https://github.com/E-RAFFERTY/metro-route-planner.git
-cd metro-route-planner
-
-### Compile
-javac -d out $(find src -name "*.java")
-
-### Run
-java -cp out ui.Main
-
----
-
-## 🧮 Algorithms
-
-### Dijkstra’s Algorithm
-- Treats the metro as a weighted graph
-- Each edge has a cost (1 for stops, or travel time)
-- Guarantees the optimal path for non-negative weights
-
-### BFS (Least-Changes)
-- Treats the network as an unweighted graph
-- Explores by number of hops
-- Prefers staying on the same line
-- Good for minimising transfers
-
----
-
-## 🧱 Object-Oriented Design
-
-Station → stores name, zone, and neighbours  
-Connection → represents links between stations  
-MetroNetwork → manages all stations and connections  
-RouteFinder → interface for route-finding algorithms  
-DijkstraRouteFinder and BfsRouteFinder implement RouteFinder
-
-This structure allows adding new algorithms, constraints, or GUIs easily.
-
+- i have two ways of showing the user the route 1. in a text box (in the style of staion (line you need to stay on untill change/end))end/change station
 
